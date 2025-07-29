@@ -10,6 +10,4 @@ EXPOSE 50000
 
 COPY . .
 
-RUN  mvn package -ntp -Dmaven.test.skip
-
-ENTRYPOINT ["java","-jar","target/spotme-api-gateway-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["/bin/bash"]
